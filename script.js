@@ -16,6 +16,7 @@ const story = document.querySelector(".story");
 const gift = document.querySelector(".gift");
 
 const icons = document.querySelectorAll(".selectable-icon");
+const todaysDate = document.querySelector(".today-date");
 
 const dailyContent = {
   1: {
@@ -327,6 +328,9 @@ document.addEventListener("DOMContentLoaded", () => {
           program.textContent = content.program;
           story.textContent = content.story;
           gift.textContent = content.gift;
+          todaysDate.textContent = `${month}.${
+            dayNumber < 10 ? `0${dayNumber}` : dayNumber
+          }`;
         }
         setDefaultState();
 
