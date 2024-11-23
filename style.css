@@ -330,6 +330,19 @@ body {
   text-align: center;
 }
 
+.today-date {
+  position: absolute;
+  bottom: 1rem;
+  font-size: 4rem;
+  color: #ff0000;
+  background-color: wheat;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  display: inline-block;
+  border-radius: 4rem;
+  font-weight: 500;
+  box-shadow: 0 0rem 1rem 0.3rem rgba(0, 0, 0, 0.2);
+}
+
 .icons {
   z-index: 10;
   display: flex;
@@ -415,13 +428,13 @@ body {
   }
 
   .title-container {
-    width: 40rem;
+    width: 10rem;
   }
 
   .title {
     display: inline-block;
-    padding: 3rem;
-    font-size: 4rem;
+    padding: 1rem;
+    font-size: 3rem;
     font-weight: 700;
     color: #ffd700;
     text-align: center;
@@ -471,7 +484,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 35rem;
-    height: 60rem;
+    height: 80rem;
     background-color: rgba(255, 251, 197, 0.6);
     box-shadow: 0 0rem 1rem 0.3rem rgba(0, 0, 0, 0.2);
     border-radius: 40px;
@@ -506,7 +519,6 @@ body {
     z-index: 8;
     display: flex;
     justify-content: center;
-
     flex-direction: row;
 
     margin-left: 5rem;
@@ -613,5 +625,10 @@ body {
 
   .middle-placement {
     transform: translateY(300%);
+  }
+  .today-date {
+    width: 90%;
+    text-align: center;
+    position: absolute;
   }
 }
