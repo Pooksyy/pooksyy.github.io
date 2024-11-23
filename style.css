@@ -1,0 +1,617 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Cinzel";
+  user-select: none;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  overflow: scroll;
+}
+
+body {
+  background-color: #2f4f4f;
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.main-page {
+  z-index: 1;
+}
+
+.title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+}
+.title {
+  font-size: 5rem;
+  font-weight: 700;
+  color: #ffd700;
+  text-align: center;
+  margin-top: 7rem;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 1rem;
+  display: inline-block;
+  width: 120rem;
+  line-height: 13rem;
+  box-shadow: 0 0rem 1rem 0.3rem rgba(0, 0, 0, 0.1);
+  transition: all 0.6s;
+}
+
+.door-panel {
+  display: flex;
+  justify-content: center;
+}
+
+.door-grid {
+  display: none;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: 5rem;
+  row-gap: 5rem;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  transition: all 0.6s;
+}
+
+.door-btn {
+  width: 15rem;
+  height: 20rem;
+  border: none;
+  background-color: #b22222;
+  font-size: 7rem;
+  color: #ffd700;
+  border-radius: 1rem;
+  box-shadow: 0 0rem 1rem 0.3rem rgba(0, 0, 0, 0.3);
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.door-btn:hover {
+  transform: scale(1.08);
+  background-color: #c14e4e;
+  color: #fff;
+  box-shadow: 0 0rem 6rem 0.3rem rgba(255, 255, 255, 0.5);
+}
+
+.door-btn:active {
+  transform: scale(1);
+  background-color: #c14e4e;
+  color: #fff;
+  box-shadow: 0 0rem 6rem 0.35em rgba(255, 255, 255, 0.5);
+}
+
+.btn-not-accessed {
+  opacity: 50%;
+}
+
+.btn-not-accessed:hover {
+  width: 15rem;
+  height: 20rem;
+  border: none;
+  background-color: #b22222;
+  font-size: 7rem;
+  color: #ffd700;
+  border-radius: 1rem;
+  box-shadow: 0 0rem 1rem 0.3rem rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+  cursor: default;
+  transform: scale(1);
+}
+
+.btn-not-accessed:active {
+  width: 15rem;
+  height: 20rem;
+  border: none;
+  background-color: #b22222;
+  font-size: 7rem;
+  color: #ffd700;
+  border-radius: 1rem;
+  box-shadow: 0 0rem 1rem 0.3rem rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+  cursor: default;
+  transform: scale(1);
+}
+
+.btn-current-day {
+  background-color: #fcd994;
+  color: red;
+  animation: wiggle 3s ease-in-out infinite;
+}
+
+.btn-current-day:hover {
+  background-color: #feecca;
+  color: #004000;
+}
+
+.btn-current-day:active {
+  background-color: #feecca;
+  color: #004000;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: translateY(0); /* Kezdőpozíció */
+  }
+  50% {
+    transform: translateY(-10px); /* Felfelé mozdul 10px-t */
+  }
+  100% {
+    transform: translateY(0); /* Vissza az eredeti helyére */
+  }
+}
+
+/*MODAL*/
+
+.modal,
+.darkbackground {
+  transition: opacity 0.2s ease; /* Animáljuk az opacity-t */
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none; /* Ne reagáljon a kattintásokra */
+}
+
+.show-flex {
+  display: flex; /* Display csak a végén */
+  opacity: 1;
+}
+
+.modal {
+  z-index: 5;
+
+  position: fixed;
+  display: flex;
+  justify-content: center;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100rem;
+  height: 60rem;
+  background-color: rgba(255, 251, 197, 0.6);
+  box-shadow: 0 0rem 1rem 0.3rem rgba(0, 0, 0, 0.2);
+  border-radius: 40px;
+  backdrop-filter: blur(8px);
+  opacity: 0; /* Kezdetben láthatatlan */
+  overflow: hidden;
+  margin: 0;
+}
+
+.darkbackground {
+  z-index: 3;
+  position: fixed;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  opacity: 0; /* Kezdetben nem látható */
+}
+
+.middle-placement {
+  transform: translateY(200%);
+}
+
+.opacityzero {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.opacityfull {
+  opacity: 100%;
+  visibility: visible;
+}
+
+.ribbon {
+  height: 22rem;
+  position: absolute;
+
+  margin-right: -13rem;
+  margin-top: -6rem;
+  transform: rotate(-150deg);
+}
+
+.top {
+  right: 0;
+  top: 0;
+  margin-right: -13rem;
+  margin-top: -6rem;
+  transform: rotate(-150deg);
+}
+
+.bottom {
+  left: 0;
+  bottom: 0;
+  margin-left: -15rem;
+  margin-bottom: -2rem;
+  transform: rotate(50deg);
+}
+
+.modal-content {
+  z-index: 8;
+  display: flex;
+  justify-content: center;
+
+  flex-direction: row;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  padding: 0;
+}
+.daily-quote {
+  display: flex;
+  align-items: center;
+  gap: 10rem;
+  flex-direction: column;
+  margin-top: 10rem;
+  transition: all 0.3s;
+}
+.quote-title {
+  font-size: 7rem;
+}
+
+.quote {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.daily-program {
+  display: flex;
+  align-items: center;
+  gap: 10rem;
+  flex-direction: column;
+  margin-top: 10rem;
+  transition: all 0.3s;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+.program-title {
+  font-size: 7rem;
+}
+
+.program {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.daily-story {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  flex-direction: column;
+  margin-top: 10rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  transition: all 0.3s;
+}
+.story-title {
+  font-size: 5rem;
+  text-align: center;
+}
+
+.story {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.daily-gift {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+  flex-direction: column;
+  margin-top: 10rem;
+  transition: all 0.3s;
+}
+.gift-title {
+  font-size: 7rem;
+}
+
+.gift {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.icons {
+  z-index: 10;
+  display: flex;
+  gap: 2rem;
+  position: absolute;
+  left: 0;
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+
+.icon-container {
+  overflow: hidden;
+  border: none;
+
+  padding: 0.1rem;
+  height: 8.5rem;
+}
+
+.selectable-icon:hover {
+  transform: translateY(1rem);
+  opacity: 100%;
+}
+
+.selectable-icon:active {
+  transform: translateY(2rem);
+}
+
+.selectable-icon {
+  display: inline-block;
+  font-size: 4rem;
+  background-color: #ff0000c0;
+  color: white;
+  border-radius: 100rem;
+  padding: 1rem;
+  transition: all 0.2s;
+}
+
+.exit-icon {
+  z-index: 10;
+  position: absolute;
+  right: 2rem;
+  top: 1.5rem;
+  display: inline-block;
+  font-size: 3rem;
+  background-color: #ff0000c0;
+  color: white;
+  border-radius: 100rem;
+  padding: 1rem;
+  transition: all 0.2s;
+  box-shadow: 0 0rem 1rem 0.3rem rgba(0, 0, 0, 0.3);
+}
+
+.exit-icon:hover {
+  background-color: #ff6868;
+  color: black;
+}
+
+.exit-icon:active {
+  background-color: #ff6868;
+  color: black;
+  transform: scale(0.8);
+}
+
+.deactivated {
+  opacity: 20%;
+}
+
+.active {
+  opacity: 100%;
+}
+
+.absolute {
+  position: absolute;
+}
+
+@media (max-width: 500px) {
+  .main-page {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .title-container {
+    width: 40rem;
+  }
+
+  .title {
+    display: inline-block;
+    padding: 3rem;
+    font-size: 4rem;
+    font-weight: 700;
+    color: #ffd700;
+    text-align: center;
+    margin-top: 7rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 1rem;
+
+    line-height: 4rem;
+    box-shadow: 0 0rem 1rem 0.3rem rgba(0, 0, 0, 0.1);
+    transition: all 0.6s;
+  }
+
+  .door-panel {
+    display: flex;
+  }
+
+  .door-grid {
+    display: none;
+    grid-template-columns: 1fr;
+
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    transition: all 0.6s;
+  }
+
+  .door-btn {
+    border: none;
+    background-color: #b22222;
+    font-size: 7rem;
+    color: #ffd700;
+    border-radius: 1rem;
+    box-shadow: 0 0rem 1rem 0.3rem rgba(0, 0, 0, 0.3);
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+
+  .modal {
+    z-index: 5;
+
+    position: fixed;
+    display: flex;
+    justify-content: center;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35rem;
+    height: 60rem;
+    background-color: rgba(255, 251, 197, 0.6);
+    box-shadow: 0 0rem 1rem 0.3rem rgba(0, 0, 0, 0.2);
+    border-radius: 40px;
+    backdrop-filter: blur(8px);
+    opacity: 0; /* Kezdetben láthatatlan */
+    overflow: scroll;
+  }
+
+  .ribbon {
+    display: none;
+  }
+
+  .icons {
+    z-index: 10;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    top: 1rem;
+  }
+
+  .selectable-icon {
+    display: inline-block;
+    font-size: 2rem;
+    background-color: #ff0000c0;
+    color: white;
+    border-radius: 100rem;
+    padding: 1rem;
+    transition: all 0.2s;
+  }
+
+  .modal-content {
+    width: 10px;
+    z-index: 8;
+    display: flex;
+    justify-content: center;
+
+    flex-direction: row;
+
+    margin-left: 5rem;
+    margin-right: 5rem;
+    padding: 0;
+  }
+
+  .daily-quote {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    flex-direction: column;
+    margin-top: 10rem;
+    transition: all 0.3s;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+    margin-top: 10rem;
+  }
+  .quote-title {
+    font-size: 3.5rem;
+  }
+
+  .quote {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .daily-program {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    flex-direction: column;
+    margin-top: 10rem;
+    transition: all 0.3s;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .program-title {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+
+  .program {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .daily-story {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    flex-direction: column;
+    margin-top: 10rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    transition: all 0.3s;
+  }
+  .story-title {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .story {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .daily-gift {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+    flex-direction: column;
+    margin-top: 10rem;
+    transition: all 0.3s;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .gift-title {
+    font-size: 3.5rem;
+  }
+
+  .gift {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .darkbackground {
+    z-index: 3;
+    position: fixed;
+
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    opacity: 0; /* Kezdetben nem látható */
+  }
+
+  .btn-current-day {
+    background-color: #fcd994;
+    color: red;
+    animation: wiggle 3s ease-in-out infinite;
+  }
+
+  .middle-placement {
+    transform: translateY(300%);
+  }
+}

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="pics/hat-308003_1280.webp"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>2024 Adventi Kalendárium</title>
+  </head>
+  <body draggable="false">
+    <div class="main-page">
+      <h1 class="curret-day"></h1>
+      <div class="modal hidden">
+        <ion-icon name="close-outline" class="exit-icon"></ion-icon>
+        <div class="icons">
+          <a class="icon-container">
+            <ion-icon
+              name="document-outline"
+              class="selectable-icon quote-trgt"
+            ></ion-icon>
+          </a>
+          <a class="icon-container">
+            <ion-icon
+              name="film-outline"
+              class="selectable-icon program-trgt"
+            ></ion-icon>
+          </a>
+          <a class="icon-container">
+            <ion-icon
+              name="book-outline"
+              class="selectable-icon story-trgt"
+            ></ion-icon>
+          </a>
+          <a class="icon-container">
+            <ion-icon
+              name="gift-outline"
+              class="selectable-icon gift-trgt"
+            ></ion-icon>
+          </a>
+        </div>
+
+        <img
+          src="pics/cockapoo-347088_1280.webp"
+          alt=""
+          class="ribbon top"
+          draggable="false"
+        />
+        <img
+          src="pics/cockapoo-347088_1280.webp"
+          alt=""
+          class="ribbon bottom"
+          draggable="false"
+        />
+        <div class="modal-content">
+          <div class="daily-quote absolute">
+            <h3 class="quote-title">A nap idézete</h3>
+
+            <p class="quote">
+              "A karácsony a szeretet ünnepe - és nincs szebb ajándék annál,
+              hogy veled ünnepelhetem."
+            </p>
+          </div>
+
+          <div class="daily-program absolute opacityzero">
+            <h3 class="program-title">Napi program</h3>
+
+            <p class="program">
+              "A karácsony a szeretet ünnepe - és nincs szebb ajándék annál,
+              hogy veled ünnepelhetem."
+            </p>
+          </div>
+
+          <div class="daily-story absolute opacityzero">
+            <h3 class="story-title">Napi történetdarab</h3>
+
+            <p class="story">
+              "A karácsony a szeretet ünnepe - és nincs szebb ajándék annál,
+              hogy veled ünnepelhetem."
+            </p>
+          </div>
+
+          <div class="daily-gift absolute opacityzero">
+            <h3 class="gift-title">Napi ajándék</h3>
+
+            <p class="gift">
+              "A karácsony a szeretet ünnepe - és nincs szebb ajándék annál,
+              hogy veled ünnepelhetem."
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="darkbackground hidden"></div>
+      <div class="title-container">
+        <h1 class="title opacityzero middle-placement">
+          2024 Adventi Kalendárium
+        </h1>
+      </div>
+
+      <div class="door-panel">
+        <div class="door-grid opacityzero">
+          <div class="door">
+            <button class="door-btn">1</button>
+          </div>
+          <div class="door">
+            <button class="door-btn">2</button>
+          </div>
+          <div class="door">
+            <button class="door-btn">3</button>
+          </div>
+          <div class="door">
+            <button class="door-btn">4</button>
+          </div>
+          <div class="door">
+            <button class="door-btn">5</button>
+          </div>
+          <div class="door">
+            <button class="door-btn">6</button>
+          </div>
+          <div class="door">
+            <button class="door-btn">7</button>
+          </div>
+          <div class="door">
+            <button class="door-btn">8</button>
+          </div>
+          <div class="door">
+            <button class="door-btn">9</button>
+          </div>
+          <div class="door">
+            <button class="door-btn">10</button>
+          </div>
+          <div class="door">
+            <button class="door-btn">11</button>
+          </div>
+          <div class="door">
+            <button class="door-btn">12</button>
+          </div>
+          <div class="door">
+            <button class="door-btn">13</button>
+          </div>
+          <div class="door">
+            <button class="door-btn">14</button>
+          </div>
+          <div class="door">
+            <button class="door-btn">15</button>
+          </div>
+          <div class="door">
+            <button class="door-btn">16</button>
+          </div>
+          <div class="door">
+            <button class="door-btn">17</button>
+          </div>
+          <div class="door">
+            <button class="door-btn">18</button>
+          </div>
+          <div class="door">
+            <button class="door-btn">19</button>
+          </div>
+          <div class="door">
+            <button class="door-btn">20</button>
+          </div>
+          <div class="door">
+            <button class="door-btn">21</button>
+          </div>
+          <div class="door">
+            <button class="door-btn">22</button>
+          </div>
+          <div class="door">
+            <button class="door-btn">23</button>
+          </div>
+          <div class="door">
+            <button class="door-btn">24</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
