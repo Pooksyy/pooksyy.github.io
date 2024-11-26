@@ -43,7 +43,7 @@ const dailyContent = {
 
     quote: `"A karácsony számomra az, hogy minden pillanatban érezhetem a szerelmed melegét."`,
 
-    story: `A kis csapat a dombok között találkozott Bertalannal, a kispingvinnel, aki egy jégcsapokkal díszített szánkót húzott maga után. "Készülök a nagy karácsonyi szánkóversenyre!" – jelentette ki büszkén. Herold megkérdezte, van-e ideje velük tartani, mire Bertalan így felelt: "Ha hoztok kakaót, jövök!" Természetesen mindenki nevetett, és megosztották vele a termoszukat.`,
+    story: `A kis csapat elindult a nagy útra, és a dombok között találkozott Bertalannal, a kispingvinnel, aki egy jégcsapokkal díszített szánkót húzott maga után. "Készülök a nagy karácsonyi szánkóversenyre!" – jelentette ki büszkén. Herold megkérdezte, van-e ideje velük tartani, mire Bertalan így felelt: "Ha hoztok kakaót, jövök!" Természetesen mindenki nevetett, és megosztották vele a termoszukat.`,
 
     gift: `Csoki3`,
   },
@@ -57,11 +57,11 @@ const dailyContent = {
     gift: `Csoki`,
   },
   5: {
-    program: `Nézzünk meg egy ünnepi témájú filmet vagy rajzfilmet!`,
+    program: `Nézzünk meg egy ünnepi témájú filmet!`,
 
     quote: `„Amíg te vagy a karácsonyi történetem főszereplője, addig minden csodásan alakul.”`,
 
-    story: `A társaság egy rétre érve találkozott Bockóval, a virágos bocival, aki éppen hóvirágokat festett az ablakokra jégkristályokból. "Hamarosan készítek kakaós pralinékat!" – újságolta. "Nektek is megmutatom, ha eljöttök a kis műhelyembe!" A kis csapat izgatottan elfogadta az ajánlatot.`,
+    story: `A társaság egy rétre érve találkozott Bockóval, a virágos bocival, aki éppen hóvirágokat festett az ablakokra. "Hamarosan készítek kakaós pralinékat!" – újságolta. "Nektek is megmutatom, ha eljöttök a kis műhelyembe!" A kis csapat izgatottan elfogadta az ajánlatot.`,
 
     gift: `Csoki`,
   },
@@ -70,7 +70,7 @@ const dailyContent = {
 
     quote: `„A legszebb fények karácsonykor nem az égősorokon ragyognak, hanem a szemünkben, amikor egymásra nézünk.”`,
 
-    story: `A hóesés közepén egy kengurufarkot pillantottak meg. Picibaba volt az, aki nagyokat ugrált a hóban. "Kakaót iszom, hogy tovább bírjam az ugrándozást!" – kacagott. Hanna elővette a termoszát, és őt is megkínálta. "Velünk tartasz a karácsonyi kalandban?" – kérdezte Herold. Picibaba egy nagy ugrással csatlakozott.`,
+    story: `A hóesés közepén egy kengurut pillantottak meg. Picibaba volt az, aki nagyokat ugrált a hóban. "Kakaót iszom, hogy tovább bírjam az ugrándozást!" – kacagott. Hanna elővette a termoszát, és őt is megkínálta. "Velünk tartasz a karácsonyi kalandban?" – kérdezte Herold. Picibaba egy nagy ugrással csatlakozott.`,
 
     gift: `Csoki`,
   },
@@ -79,12 +79,12 @@ const dailyContent = {
 
     quote: `„A szeretet az igazi karácsonyi csoda – és veled ezt minden nap megtapasztalom.”`,
 
-    story: `Herold egy régi térképet talált Bertalan szánkójában. "Ez egy varázstérkép!" – mondta Bertalan. "Azt mutatja meg, hol található a tökéletes karácsonyfa." A csapat izgatottan elindult, hogy kövessék a térképet.`,
+    story: `Herold egy régi térképet talált Bertalan szánkóján. "Ez egy varázstérkép!" – mondta Bertalan. "Azt mutatja meg, hol található a tökéletes karácsonyfa." A csapat izgatottan elindult, hogy kövessék a térképet.`,
 
     gift: `Csoki`,
   },
   8: {
-    program: `Oldjunk meg egy ünnepi témájú rejtvényt vagy kvízt (akár egy online verziót is).`,
+    program: `Oldjunk meg egy ünnepi témájú rejtvényt vagy kvízt (akár egy online verziót is, vagy az adventi szabadulókönyvet).`,
 
     quote: `„Nem kell hóesés vagy díszek, hogy ünnepi hangulatban legyek – elég, ha melletted lehetek.”`,
 
@@ -93,7 +93,7 @@ const dailyContent = {
     gift: `Csoki`,
   },
   9: {
-    program: `Készítsünk együtt kézzel vagy digitálisan karácsonyi képeslapokat, és küldjünk el egy párat szeretteiteknek.`,
+    program: `Készítsünk együtt kézzel vagy digitálisan karácsonyi képeslapokat, és küldjünk el egy párat a családtagjainknak.`,
 
     quote: `„Karácsony: az az idő, amikor még jobban rádöbbenek, hogy veled az élet egy örök ünnep.”`,
 
@@ -106,7 +106,7 @@ const dailyContent = {
 
     quote: `„A karácsony nem a tökéletességről szól, hanem arról, hogy ott legyünk egymásnak – és te vagy a legszebb bizonyíték erre.”`,
 
-    story: `A babák egész álló nap alapanyagokat gyűjtöttek az új recepthez.`,
+    story: `A babák egész álló nap alapanyagokat gyűjtöttek az új recepthez. Nagyon elfáradtak, de mindenki elszűrcsölt egy pohár kakaót, és újra erőre kaptak!`,
 
     gift: `Csoki`,
   },
@@ -115,7 +115,7 @@ const dailyContent = {
 
     quote: `„A tél hidege sem számít, amikor a szíved melegsége átölel engem.”`,
 
-    story: `Egy kiadós alvás után folytatták a keresgélést.`,
+    story: `Végül már a kakaó sem segített eleget, így egy kiadós alvás után folytatták a keresgélést.`,
 
     gift: `Csoki`,
   },
@@ -124,7 +124,7 @@ const dailyContent = {
 
     quote: `„Ha a szereteted egy karácsonyi ajándék lenne, egész évben kibontanám, újra és újra.”`,
 
-    story: `A babák annyira elfáradtak, hogy ezt a napot átaludták.`,
+    story: `A keresgélés után a babák annyira elfáradtak, hogy ezt a napot átaludták.`,
 
     gift: `Csoki`,
   },
@@ -133,12 +133,12 @@ const dailyContent = {
 
     quote: `„Az égősorok ragyognak, a hópelyhek táncolnak, de a szívem csak a te dallamodra dobban.”`,
 
-    story: `Az erdő közepén varázslatos hóangyalokat találtak. Amikor a csapat lefeküdt a hóba, hogy saját hóangyalokat készítsen, különleges fények jelentek meg az égen. Ez mutatta meg nekik az utat a tökéletes karácsonyfához.`,
+    story: `Miután felébredtek, az erdő közepén egy varázslatos hóangyalt találtak. Amikor a csapat lefeküdt a hóba, hogy saját hóangyalokat készítsen, amitől különleges fények jelentek meg az égen. Ez mutatta meg nekik az utat a tökéletes karácsonyfához.`,
 
     gift: `Csoki`,
   },
   14: {
-    program: `Menjünk el egy nagy sétára!`,
+    program: `Számkifestőzzünk ma!`,
 
     quote: `„A karácsonyi csillagokat nézve mindig arra gondolok, hogy te vagy a legfényesebb mind közül.”`,
 
@@ -147,7 +147,7 @@ const dailyContent = {
     gift: `Csoki`,
   },
   15: {
-    program: `Játsszunk egy társasjátékot vagy valami vicces PC játékot!`,
+    program: `Játsszunk egy társasjátékot vagy valami vicces PS játékot!`,
 
     quote: `„A karácsonyfa alatt nem ajándékokat keresek, hanem a pillanatot, amikor magamhoz ölelhetlek.”`,
 
@@ -169,7 +169,7 @@ const dailyContent = {
 
     quote: `„A tél hideg, de a karácsony forrón tartja a szívünket – főleg, ha ott vagy nekem.”`,
 
-    story: `A fa megtalálása után rájöttek, hogy hiányzik a csúcsdísz. Bertalan szerint a legszebb csillag egy közeli hegycsúcs tetején található. Együtt vágtak neki a hegynek, kakaós szüneteket tartva.`,
+    story: `A fa megtalálása után rájöttek, hogy hiányzik a csúcsdísz. Bertalan szerint a legszebb csillag egy közeli hegycsúcs tetején található. Együtt vágtak neki a hegynek, kakaós szüneteket tartva, miközben a fát a szánkón húzták felfele.`,
 
     gift: `Csoki`,
   },
@@ -293,7 +293,7 @@ function updateIconClasses(clickedIcon) {
 
 document.addEventListener("DOMContentLoaded", () => {
   let today = new Date().getDate(); // Az aktuális nap száma
-  let month = new Date().getMonth() + 1;
+  let month = new Date().getMonth() + 2;
   console.log(month);
 
   setTimeout(() => {
@@ -315,9 +315,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const dayNumber = parseInt(button.textContent, 10);
     const content = dailyContent[dayNumber];
 
-    if (dayNumber === today && month === 11) {
+    if (dayNumber === today && month === 12) {
       button.classList.add("btn-current-day");
-    } else if (dayNumber > today && month === 11) {
+    } else if (dayNumber > today && month === 12) {
       button.classList.add("btn-not-accessed");
     }
 
@@ -347,7 +347,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  darkBckg.addEventListener("click", function () {
+  darkBckg.addEventListener("click", function (event) {
+    event.preventDefault();
+
+    document.body.style.top = ""; // Visszaállítjuk a pozíciót
+
     darkBckg.style.opacity = "0";
     modal.style.opacity = "0";
 
@@ -356,11 +360,14 @@ document.addEventListener("DOMContentLoaded", () => {
       modal.classList.remove("show-flex");
       darkBckg.classList.add("hidden");
       modal.classList.add("hidden");
+
       partialReset();
     }, 200);
   });
 
-  exitButton.addEventListener("click", function () {
+  exitButton.addEventListener("click", function (event) {
+    event.preventDefault();
+
     darkBckg.style.opacity = "0";
     modal.style.opacity = "0";
 
