@@ -27,7 +27,7 @@ const dailyContent = {
 
     story: `Herold cocó, a lelkes kis viziló, izgatottan ébredt. Az ablakon kinézve meglátta az első hópelyheket, amelyek lágyan hulltak a tájra. "Ez tökéletes nap a kakaóhoz!" – gondolta, és máris keresni kezdte kishúgát, Hanna cocót. Együtt eldöntötték, hogy különleges karácsonyi kalandot terveznek, amihez természetesen mindenkinek szüksége lesz egy csésze forró kakaóra.`,
 
-    gift: "Csoki1",
+    gift: "Csoki1 + Extra ajándék",
   },
   2: {
     program: `Készítsünk közösen egy-egy kézzel készített karácsonyi dekorációt!`,
