@@ -189,7 +189,8 @@ body {
   transform: translate(-50%, -50%);
   width: 100rem;
   height: 60rem;
-  background-color: rgba(255, 251, 197, 0.6);
+  background-color: rgba(255, 103, 103, 0.6);
+  color: white;
   box-shadow: 0 0rem 1rem 0.3rem rgba(0, 0, 0, 0.2);
   border-radius: 40px;
   backdrop-filter: blur(8px);
@@ -373,8 +374,8 @@ body {
 .selectable-icon {
   display: inline-block;
   font-size: 4rem;
-  background-color: #ff0000c0;
-  color: white;
+  background-color: wheat;
+  color: #ff0000;
   border-radius: 100rem;
   padding: 1rem;
   transition: all 0.2s;
@@ -387,8 +388,8 @@ body {
   top: 1.5rem;
   display: inline-block;
   font-size: 3rem;
-  background-color: #ff0000c0;
-  color: white;
+  background-color: wheat;
+  color: #ff0000;
   border-radius: 100rem;
   padding: 1rem;
   transition: all 0.2s;
@@ -480,12 +481,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    height: 65rem;
+    height: 68rem;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 35rem;
-    background-color: rgba(255, 251, 197, 0.6);
+    background-color: rgba(255, 103, 103, 0.6);
+    color: white;
     box-shadow: 0 0rem 1rem 0.3rem rgba(0, 0, 0, 0.2);
     border-radius: 40px;
     backdrop-filter: blur(8px);
@@ -507,8 +509,8 @@ body {
   .selectable-icon {
     display: inline-block;
     font-size: 2rem;
-    background-color: #ff0000c0;
-    color: white;
+    background-color: wheat;
+    color: #ff0000;
     border-radius: 100rem;
     padding: 1rem;
     transition: all 0.2s;
@@ -627,6 +629,8 @@ body {
     transform: translateY(300%);
   }
   .today-date {
+    background-color: wheat;
+    color: #ff0000;
     width: 90%;
     text-align: center;
     position: absolute;
