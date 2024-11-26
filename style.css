@@ -479,18 +479,18 @@ body {
     position: fixed;
     display: flex;
     justify-content: center;
-
+    align-items: flex-start;
+    height: 65rem;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 35rem;
-    height: 80rem;
     background-color: rgba(255, 251, 197, 0.6);
     box-shadow: 0 0rem 1rem 0.3rem rgba(0, 0, 0, 0.2);
     border-radius: 40px;
     backdrop-filter: blur(8px);
     opacity: 0; /* Kezdetben láthatatlan */
-    overflow: scroll;
+    overflow: hidden;
   }
 
   .ribbon {
@@ -518,12 +518,12 @@ body {
     width: 10px;
     z-index: 8;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: row;
-
     margin-left: 5rem;
     margin-right: 5rem;
     padding: 0;
+    overflow-y: scroll;
   }
 
   .daily-quote {
@@ -608,10 +608,9 @@ body {
   }
 
   .darkbackground {
-    z-index: 3;
-    position: fixed;
-
-    background-color: black;
+    z-index: 4;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.607);
     width: 100%;
     height: 100%;
     opacity: 0; /* Kezdetben nem látható */
@@ -630,5 +629,9 @@ body {
     width: 90%;
     text-align: center;
     position: absolute;
+  }
+
+  body.noscroll {
+    scroll-behavior: auto;
   }
 }
