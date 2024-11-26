@@ -43,7 +43,7 @@ const dailyContent = {
 
     quote: `"A karácsony számomra az, hogy minden pillanatban érezhetem a szerelmed melegét."`,
 
-    story: `A kis csapat elindult a nagy útra, és a dombok között találkozott Bertalannal, a kispingvinnel, aki egy jégcsapokkal díszített szánkót húzott maga után. "Készülök a nagy karácsonyi szánkóversenyre!" – jelentette ki büszkén. Herold megkérdezte, van-e ideje velük tartani, mire Bertalan így felelt: "Ha hoztok kakaót, jövök!" Természetesen mindenki nevetett, és megosztották vele a termoszukat.`,
+    story: `A csapat elindult a nagy útra, és a dombok között találkozott Bertalannal, a kispingvinnel, aki egy jégcsapokkal díszített szánkót húzott maga után. "Készülök a nagy karácsonyi szánkóversenyre!" – jelentette ki büszkén. Herold megkérdezte, van-e ideje velük tartani, mire Bertalan így felelt: "Ha hoztok kakaót, jövök!" Természetesen mindenki nevetett, és megosztották vele a termoszukat.`,
 
     gift: `Csoki3`,
   },
