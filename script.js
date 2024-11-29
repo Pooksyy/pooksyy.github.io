@@ -310,6 +310,9 @@ document.addEventListener("DOMContentLoaded", () => {
   setTimeout(() => {
     welcomeMsg.classList.remove("opacityzero");
     welcomeMsg.classList.add("opacityfull");
+    darkBckg.classList.remove("hidden");
+    darkBckg.style.opacity = "70%";
+    darkBckg.classList.add("show-flex");
     doorGrid.style.display = "grid";
   }, 2100);
 
@@ -391,6 +394,9 @@ document.addEventListener("DOMContentLoaded", () => {
 okBtn.addEventListener("click", function () {
   welcomeMsg.classList.remove("opacityfull");
   welcomeMsg.classList.add("opacityzero");
+  darkBckg.style.opacity = "0";
+  darkBckg.classList.remove("show-flex");
+  darkBckg.classList.add("hidden");
 });
 
 icons.forEach((icon) => {
