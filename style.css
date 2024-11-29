@@ -507,7 +507,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 35rem;
-    background-color: rgba(255, 103, 103, 0.6);
+    background-color: rgba(255, 103, 103, 0.701);
     color: white;
     box-shadow: 0 0rem 1rem 0.3rem rgba(0, 0, 0, 0.2);
     border-radius: 40px;
@@ -674,7 +674,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 35rem;
-    background-color: rgba(0, 0, 0, 0.521);
+    background-color: rgba(0, 0, 0, 0.67);
     color: white;
     box-shadow: 0 0rem 1rem 0.3rem rgba(0, 0, 0, 0.2);
     border-radius: 40px;
