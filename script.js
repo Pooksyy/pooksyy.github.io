@@ -18,6 +18,10 @@ const gift = document.querySelector(".gift");
 const icons = document.querySelectorAll(".selectable-icon");
 const todaysDate = document.querySelector(".today-date");
 
+const welcomeMsg = document.querySelector(".welcome-msg");
+
+const okBtn = document.querySelector(".okbutton");
+
 const dailyContent = {
   1: {
     program:
@@ -27,7 +31,7 @@ const dailyContent = {
 
     story: `Herold cocó, a lelkes kis viziló, izgatottan ébredt. Az ablakon kinézve meglátta az első hópelyheket, amelyek lágyan hulltak a tájra. "Ez tökéletes nap a kakaóhoz!" – gondolta, és máris keresni kezdte kishúgát, Hanna cocót. Együtt eldöntötték, hogy különleges karácsonyi kalandot terveznek, amihez természetesen mindenkinek szüksége lesz egy csésze forró kakaóra.`,
 
-    gift: "Csoki1 + Extra ajándék",
+    gift: `Mogyorós Csokigolyó, Mini Kinder Bueno, Csokipénz`,
   },
   2: {
     program: `Készítsünk közösen egy-egy kézzel készített karácsonyi dekorációt!`,
@@ -36,7 +40,7 @@ const dailyContent = {
 
     story: `Herold és Hanna éppen kakaót kortyolgattak, amikor kopogást hallottak az ajtón. Brendon, a pandamaci, hóval borítva állt az ajtóban. "Hóembert építettem, de elfogyott a kakaóm!" – mondta bánatosan. Hanna mosolyogva töltött neki egy csészével. "Csatlakozol a karácsonyi kalandunkhoz?" – kérdezte Herold. Brendon izgatottan bólogatott.`,
 
-    gift: `Csoki2`,
+    gift: `Mogyorós Csokigolyó, Mini Kinder Bueno, Csokipénz`,
   },
   3: {
     program: `Készítsünk forró csokit, teát vagy forralt bort, és próbáljunk ki egy új ízesítést!`,
@@ -45,7 +49,7 @@ const dailyContent = {
 
     story: `A kis csapat elindult a nagy útra, és a dombok között találkozott Bertalannal, a kispingvinnel, aki egy jégcsapokkal díszített szánkót húzott maga után. "Készülök a nagy karácsonyi szánkóversenyre!" – jelentette ki büszkén. Herold megkérdezte, van-e ideje velük tartani, mire Bertalan így felelt: "Ha hoztok kakaót, jövök!" Természetesen mindenki nevetett, és megosztották vele a termoszukat.`,
 
-    gift: `Csoki3`,
+    gift: `Mogyorós Csokigolyó, Mini Kinder Bueno, Csokipénz`,
   },
   4: {
     program: `Írjunk egy listát arról, hogy mit szeretnénk együtt csinálni az ünnepek alatt.`,
@@ -54,7 +58,7 @@ const dailyContent = {
 
     story: `Miközben a hóban trappoltak, egy kis füles csacsit, Füli babát találtak, aki egy hatalmas hókupac tetején ült. "Miért vagy itt egyedül?" – kérdezte Hanna. "Eltévedtem, és hideg van" – sóhajtotta Füli. Hanna gyorsan felmelegítette egy csésze kakaóval. "Gyere velünk, együtt karácsonyozni mindig vidám!" – mondta Brendon, és Füli boldogan csatlakozott.`,
 
-    gift: `Csoki`,
+    gift: `Mogyorós Csokigolyó, Mini Kinder Bueno, Csokipénz`,
   },
   5: {
     program: `Nézzünk meg egy ünnepi témájú filmet!`,
@@ -304,6 +308,8 @@ document.addEventListener("DOMContentLoaded", () => {
   }, 2000);
 
   setTimeout(() => {
+    welcomeMsg.classList.remove("opacityzero");
+    welcomeMsg.classList.add("opacityfull");
     doorGrid.style.display = "grid";
   }, 2100);
 
@@ -317,7 +323,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (dayNumber === today && month === 12) {
       button.classList.add("btn-current-day");
-    } else if (dayNumber > today && month === 12) {
+      modal.classList.add("mdl-current-day");
+    } else if (dayNumber > today || (today > 24 && month === 12)) {
       button.classList.add("btn-not-accessed");
     }
 
@@ -379,6 +386,11 @@ document.addEventListener("DOMContentLoaded", () => {
       partialReset();
     }, 200);
   });
+});
+
+okBtn.addEventListener("click", function () {
+  welcomeMsg.classList.remove("opacityfull");
+  welcomeMsg.classList.add("opacityzero");
 });
 
 icons.forEach((icon) => {
