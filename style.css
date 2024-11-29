@@ -31,6 +31,27 @@ body {
   }
 }
 
+.welcome-msg {
+  z-index: 5;
+
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 68rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 35rem;
+  background-color: rgba(255, 103, 103, 0.6);
+  color: white;
+  box-shadow: 0 0rem 1rem 0.3rem rgba(0, 0, 0, 0.2);
+  border-radius: 40px;
+  backdrop-filter: blur(8px);
+  opacity: 100; /* Kezdetben láthatatlan */
+  overflow: hidden;
+}
+
 .main-page {
   z-index: 1;
 }
@@ -585,7 +606,7 @@ body {
   }
 
   .story {
-    font-size: 1.8rem;
+    font-size: 2rem;
     text-align: center;
   }
 
@@ -638,5 +659,69 @@ body {
 
   body.noscroll {
     scroll-behavior: auto;
+  }
+
+  .welcome-msg {
+    z-index: 5;
+
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 68rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35rem;
+    background-color: rgba(0, 0, 0, 0.521);
+    color: white;
+    box-shadow: 0 0rem 1rem 0.3rem rgba(0, 0, 0, 0.2);
+    border-radius: 40px;
+    backdrop-filter: blur(8px);
+
+    overflow: hidden;
+    transition: all 0.4s;
+  }
+
+  .welcome-msg h1 {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    text-align: center;
+    font-size: 4rem;
+  }
+
+  .welcome-msg p {
+    margin-bottom: 1.5rem;
+    text-align: center;
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+
+  .welcome-msg button {
+    width: 20rem;
+    height: 6rem;
+    border: none;
+    background-color: #b22222;
+    font-size: 2rem;
+    color: #ffd700;
+    border-radius: 1rem;
+    box-shadow: 0 0rem 1rem 0.3rem rgba(0, 0, 0, 0.3);
+    transition: all 0.3s;
+    cursor: pointer;
+    margin-left: 6.9rem;
+    margin-top: 10rem;
+  }
+
+  .welcome-msg button:hover {
+    transform: scale(1.08);
+    background-color: #c14e4e;
+    color: #fff;
+  }
+
+  .welcome-msg button:active {
+    transform: scale(1);
+    background-color: #c14e4e;
+    color: #fff;
   }
 }
