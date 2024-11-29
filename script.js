@@ -297,7 +297,7 @@ function updateIconClasses(clickedIcon) {
 
 document.addEventListener("DOMContentLoaded", () => {
   let today = new Date().getDate(); // Az aktuális nap száma
-  let month = new Date().getMonth() + 2;
+  let month = new Date().getMonth() + 1;
   console.log(month);
 
   setTimeout(() => {
