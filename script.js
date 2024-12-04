@@ -67,7 +67,7 @@ const dailyContent = {
 
     story: `A társaság egy rétre érve találkozott Bockóval, a virágos bocival, aki éppen hóvirágokat festett az ablakokra. "Hamarosan készítek kakaós pralinékat!" – újságolta. "Nektek is megmutatom, ha eljöttök a kis műhelyembe!" A kis csapat izgatottan elfogadta az ajánlatot.`,
 
-    gift: `Csoki`,
+    gift: `Mogyorós csokigolyó, Mini Kinder Bueno, Mini Kindertojás, Csokipénz`,
   },
   6: {
     program: `Tegyünk egy esti sétát, és keressünk karácsonyi fényeket a környéken.`,
