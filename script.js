@@ -76,7 +76,7 @@ const dailyContent = {
 
     story: `A hóesés közepén egy kengurut pillantottak meg. Picibaba volt az, aki nagyokat ugrált a hóban. "Kakaót iszom, hogy tovább bírjam az ugrándozást!" – kacagott. Hanna elővette a termoszát, és őt is megkínálta. "Velünk tartasz a karácsonyi kalandban?" – kérdezte Herold. Picibaba egy nagy ugrással csatlakozott.`,
 
-    gift: `Csoki`,
+    gift: `Mogyorós Csokigolyó, Mini Kinder Bueno, Csokipénz`,
   },
   7: {
     program: `Süssünk együtt valami egyszerűt, például mézeskalácsot vagy csokis kekszet.`,
