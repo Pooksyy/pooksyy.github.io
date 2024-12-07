@@ -85,7 +85,7 @@ const dailyContent = {
 
     story: `Herold egy régi térképet talált Bertalan szánkóján. "Ez egy varázstérkép!" – mondta Bertalan. "Azt mutatja meg, hol található a tökéletes karácsonyfa." A csapat izgatottan elindult, hogy kövessék a térképet.`,
 
-    gift: `Csoki`,
+    gift: `Mogyorós csokigolyó, szaloncukor, mini Kinder Bueno`,
   },
   8: {
     program: `Oldjunk meg egy ünnepi témájú rejtvényt vagy kvízt (akár egy online verziót is, vagy az adventi szabadulókönyvet).`,
