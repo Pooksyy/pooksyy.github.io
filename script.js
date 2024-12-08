@@ -94,7 +94,7 @@ const dailyContent = {
 
     story: `A térkép egy hídhoz vezette őket, amelyet vastagon borított a hó. Füli baba bátran átgázolt, és mindenkinek segített átkelni. Amikor sikeresen átjutottak, Herold megjutalmazta őt egy csésze kakaóval.`,
 
-    gift: `Csoki`,
+    gift: `Szaloncukor, Mini Kinder, Mini Kinder tojás, csokipénz`,
   },
   9: {
     program: `Készítsünk együtt kézzel vagy digitálisan karácsonyi képeslapokat, és küldjünk el egy párat a családtagjainknak.`,
