@@ -103,7 +103,7 @@ const dailyContent = {
 
     story: `A térkép egy különleges helyre vezette őket: a Kandírozott Erdei ösvényhez, ahol cukorkaágak és csokoládélevelek lógtak a fákon. Bockó itt talált egy új receptet a kakaós pralinéihoz, és megígérte, hogy elkészíti karácsonyra.`,
 
-    gift: `Csoki`,
+    gift: `Szaloncukor, csokipénz, Mini Kinder`,
   },
   10: {
     program: `Írjunk együtt egy ajándéklistát a családtagoknak, és tervezzük meg, mit adunk nekik.`,
