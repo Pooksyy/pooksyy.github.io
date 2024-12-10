@@ -112,7 +112,7 @@ const dailyContent = {
 
     story: `A babák egész álló nap alapanyagokat gyűjtöttek az új recepthez. Nagyon elfáradtak, de mindenki elszűrcsölt egy pohár kakaót, és újra erőre kaptak!`,
 
-    gift: `Csoki`,
+    gift: `Sok-sok szaloncukor!!`,
   },
   11: {
     program: `Csináljuk egy mini „karácsonyi fotósarkot”, és készítsünk képeket együtt!`,
