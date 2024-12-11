@@ -121,7 +121,7 @@ const dailyContent = {
 
     story: `Végül már a kakaó sem segített eleget, így egy kiadós alvás után folytatták a keresgélést.`,
 
-    gift: `Csoki`,
+    gift: `Mogyorós csoki, Mini Kinder, Mini Kinder Bueno`,
   },
   12: {
     program: `Próbáljuk ki az origami karácsonyi díszeket!`,
