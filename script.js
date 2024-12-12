@@ -130,7 +130,7 @@ const dailyContent = {
 
     story: `A keresgélés után a babák annyira elfáradtak, hogy ezt a napot átaludták.`,
 
-    gift: `Csoki`,
+    gift: `Mogyorós csoki, csokipénz, Mini Kinder tojások`,
   },
   13: {
     program: `Menjünk el egy helyi cukrászdába (Pl. Csáklit), és kóstoljunk meg valami szezonális sütit.`,
