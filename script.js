@@ -139,7 +139,7 @@ const dailyContent = {
 
     story: `Miután felébredtek, az erdő közepén egy varázslatos hóangyalt találtak. Amikor a csapat lefeküdt a hóba, hogy saját hóangyalokat készítsen, amitől különleges fények jelentek meg az égen. Ez mutatta meg nekik az utat a tökéletes karácsonyfához.`,
 
-    gift: `Csoki`,
+    gift: `Mini Kinder, Mogyorós Csoki, csokipénz`,
   },
   14: {
     program: `Számkifestőzzünk ma!`,
