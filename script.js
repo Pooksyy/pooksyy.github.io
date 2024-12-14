@@ -148,7 +148,7 @@ const dailyContent = {
 
     story: `A kicsik elindultak a hosszú útra, ami a karácsonyfához vezetett. Közben karácsonyi dalokat dúdolgattak közösen.`,
 
-    gift: `Csoki`,
+    gift: `Mini Kinder Csoki, Csokipénz`,
   },
   15: {
     program: `Játsszunk egy társasjátékot vagy valami vicces PS játékot!`,
