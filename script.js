@@ -142,7 +142,7 @@ const dailyContent = {
     gift: `Mini Kinder, Mogyorós Csoki, csokipénz`,
   },
   14: {
-    program: `Számkifestőzzünk ma!`,
+    program: `Számkifestőzzünk ma! (Még meg kell venni)`,
 
     quote: `„A karácsonyi csillagokat nézve mindig arra gondolok, hogy te vagy a legfényesebb mind közül.”`,
 
