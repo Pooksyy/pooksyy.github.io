@@ -157,7 +157,7 @@ const dailyContent = {
 
     story: `Mivel az út nagyon hosszú volt, a mai napot végigbandukolták. Közben nagyon sok kakaót ittak!`,
 
-    gift: `Csoki`,
+    gift: `Mini Kinderek, csokipénz`,
   },
   16: {
     program: `Készítsünk saját karácsonyi díszt szárított narancskarikákból!`,
