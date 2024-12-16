@@ -166,7 +166,7 @@ const dailyContent = {
 
     story: `Az út hosszú volt, de megérkeztek. Nagyon elfáradtak, ezért a napot átcsucsulták.`,
 
-    gift: `Csoki`,
+    gift: `Kinder Schoko Bons, csokipénz`,
   },
   17: {
     program: `Szerezzünk be egy karácsonyi témájú puzzle-t, és rakjuk ki együtt. Közben hallgassunk karácsonyi zenéket!`,
