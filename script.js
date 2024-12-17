@@ -175,7 +175,7 @@ const dailyContent = {
 
     story: `A fa megtalálása után rájöttek, hogy hiányzik a csúcsdísz. Bertalan szerint a legszebb csillag egy közeli hegycsúcs tetején található. Együtt vágtak neki a hegynek, kakaós szüneteket tartva, miközben a fát a szánkón húzták felfele.`,
 
-    gift: `Csoki`,
+    gift: `Kinder Schoko Bons`,
   },
   18: {
     program: `Főzzünk együtt egy egyszerű vacsorát, majd gyertyafény mellett együk meg.`,
