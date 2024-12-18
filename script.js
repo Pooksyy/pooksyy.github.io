@@ -184,7 +184,7 @@ const dailyContent = {
 
     story: `A hegy nagyon magas volt. "Ezt nem hiszem el, hogy megint ekkora útra kell menni!" - mondta Herold cocó. "Ugyan már Herold, gondolj arra, mennyi kakaót fogunk inni közben!" - válaszolt Hanna cocó`,
 
-    gift: `Csoki`,
+    gift: `Kinder Schoko Bons`,
   },
   19: {
     program: `Nézzünk meg két karácsonyi filmet egymás után, és közben együnk popcorn-t vagy chipset!`,
